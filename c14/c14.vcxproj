@@ -154,10 +154,12 @@
   <ItemGroup>
     <ClCompile Include="c14.cpp" />
     <ClCompile Include="TestInitList.cpp" />
+    <ClCompile Include="TestLambda.cpp" />
     <ClCompile Include="TestTemplate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TestInitList.h" />
+    <ClInclude Include="TestLambda.h" />
     <ClInclude Include="TestTemplate.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
