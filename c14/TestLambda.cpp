@@ -18,7 +18,7 @@ void TestLambda::lambda_ref_capture()
 
 	// see vars: name and func concat
 	string sentence = concat("Hello");
-	cout << "<fix bug iss11>lambda_ref_capture: name=" << name << ", setence=" << sentence << endl;
+	cout << "<fix bug 11> lambda_ref_capture: name=" << name << ", setence=" << sentence << endl;
 }
 
 void TestLambda::lambda_value_capture()
@@ -35,7 +35,7 @@ void TestLambda::lambda_value_capture()
 
 	// see vars: name and func concat
 	string sentence = concat("Hello");
-	cout << "lambda_value_capture: name=" << name << ", setence=" << sentence << endl;
+	cout << "<fix bug 22> lambda_value_capture: name=" << name << ", setence=" << sentence << endl;
 }
 
 void TestLambda::test()
