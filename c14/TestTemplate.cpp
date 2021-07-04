@@ -14,6 +14,7 @@ auto TestTemplate::add_auto(const string& a, const string& b) {
 
 template<>
 auto TestTemplate::add_auto(bool a, bool b) {
+	cout << "bool类型特例化了" << endl;
 	return a && b;
 }
 
