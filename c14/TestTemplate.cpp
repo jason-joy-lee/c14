@@ -12,6 +12,11 @@ auto TestTemplate::add_auto(const string& a, const string& b) {
 	return a + b;
 }
 
+template<>
+auto TestTemplate::add_auto(bool a, bool b) {
+	return a && b;
+}
+
 void TestTemplate::test()
 {
  	double z = add<double, int, double>(3, 5.2f);
@@ -25,11 +30,14 @@ void TestTemplate::test()
 	cout << "add_auto<>(3, 5.2f)=" << result << endl;
 
 	string sentance = add_auto<>("hello ", "Jason");
-	cout << "specialize template add_auto with const char*:" << sentance << endl;
+	cout << "add_auto<const char*>: " << sentance << endl;
 
 	string a = "specialized ", b = "template add_auto";
 	sentance = add_auto(a, b);
-	cout << "specialize template add_auto with string:" << sentance << endl;
+	cout << "add_auto<string>: " << sentance << endl;
+
+	bool isIt = add_auto<>(true, false);
+	cout << "add_auto<bool>: " << isIt << endl;
 
 //	auto rlt = AddString<>("hello ", "Jason");
 //	cout << rlt << endl;

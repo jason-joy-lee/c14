@@ -33,6 +33,10 @@ namespace TestTemplate {
 	template <>
 	auto add_auto(const string& a, const string& b);
 
+	// specialized string
+	template <>
+	auto add_auto(bool a, bool b);
+
 //	template<>
 //	using AddString = add_auto<std::string, std::string>;
 
