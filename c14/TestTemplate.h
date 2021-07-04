@@ -25,13 +25,17 @@ namespace TestTemplate {
 		return x + y;
 	}
 
-	// 模板特例化
+	// specialized const char*
 	template <>
 	auto add_auto(const char* a, const char* b);
 
-	// 增加一个特例化模板
+	// specialized string
 	template <>
 	auto add_auto(const string& a, const string& b);
+
+	// specialized string
+	template <>
+	auto add_auto(bool a, bool b);
 
 //	template<>
 //	using AddString = add_auto<std::string, std::string>;

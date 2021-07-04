@@ -5,3 +5,9 @@
 /.vs/c14/v15
 /c14/x64/Debug
 /x64/Debug
+<<<<<<< HEAD
+=======
+.gitignore
+.vs/*
+
+>>>>>>> fea100
