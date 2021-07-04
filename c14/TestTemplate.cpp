@@ -4,6 +4,7 @@ using namespace TestTemplate;
 
 template<>
 auto TestTemplate::add_auto(const char* a, const char* b) {
+	cout << "紧急修复一个Bug，在hotfix分支" << endl;
 	return string(a) + b;
 }
 
