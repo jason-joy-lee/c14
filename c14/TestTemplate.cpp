@@ -25,11 +25,11 @@ void TestTemplate::test()
 	cout << "add_auto<>(3, 5.2f)=" << result << endl;
 
 	string sentance = add_auto<>("hello ", "Jason");
-	cout << "add_auto模板 - const char*特例:" << sentance << endl;
+	cout << "specialize template add_auto with const char*:" << sentance << endl;
 
 	string a = "specialized ", b = "template add_auto";
 	sentance = add_auto(a, b);
-	cout << "add_auto模板 - string特例:" << sentance << endl;
+	cout << "specialize template add_auto with string:" << sentance << endl;
 
 //	auto rlt = AddString<>("hello ", "Jason");
 //	cout << rlt << endl;
