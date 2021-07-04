@@ -29,6 +29,10 @@ namespace TestTemplate {
 	template <>
 	auto add_auto(const char* a, const char* b);
 
+	// 增加一个特例化模板
+	template <>
+	auto add_auto(const string& a, const string& b);
+
 //	template<>
 //	using AddString = add_auto<std::string, std::string>;
 
