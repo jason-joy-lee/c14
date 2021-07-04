@@ -6,6 +6,7 @@
 
 #include "TestInitList.h"
 #include "TestTemplate.h"
+#include "TestLambda.h"
 
 using namespace std;
 
@@ -16,6 +17,9 @@ int main()
 
 	// test trailing return type
 	TestTemplate::test();
+
+	// test Lambda
+	TestLambda::test();
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
